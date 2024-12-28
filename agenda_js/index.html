@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <script>
+        //lista para armazenar os contatos
+        const agenda = []
+
+        //funcao principal para exibir o menu
+        function mostrarMenu() {
+            let opcao = "";
+
+            //continue mostrando o menu ate mostrar o 0
+            while (opcao !== 0) {
+                opcao =prompt("ESCOLHA UMA OPÇÃO: \n"+
+                    "1 - Adicionar contato \n" +
+                    "2 - Exibir todos os contatos \n" +
+                    "3 - Remover o ultimo contato \n" +
+                    "4 - Remover um contato especifico \n" +
+                    "0 - Sair " 
+                )
+
+                switch (opcao) {
+                    case "1":
+                        adicionarContato();
+                        break;
+                    case "2":
+                        exibirContatos();
+                        break;
+                    case "3":
+                        removerUltimoContato();
+                        break;
+                    case "4":
+                        removerContatoEspecifico();
+                        break;
+                    case "0":
+                        alert("Programa encerrado, ate a proxima!");
+                        break;
+                    default:
+                        alert("Opcao invalida!! Tente novamente.");
+                        break;
+                }
+            };
+        }
+
+        //funcao para adicionar um contato
+        function adicionarContato() {
+            let nome = prompt("Digite o nome do contato:");
+            let telefone = prompt("Digite o telefone do contato:");
+
+            if (nome && telefone) {
+                agenda.push({ nome, telefone });  //push para adicionar um contato na agenda
+                alert("Contato adicionado com sucesso!");
+            } else {
+                alert("Por favor, digite os dados do contato corretamente!");
+            }
+        }
+
+        //funcao para exibir todos os contatos
+        function exibirContatos() {
+            if (agenda.length === 0) {
+                alert("Nenhum contato cadastrado!");
+            } else {
+                const contatos = agenda.map((contato, index) => {
+                    return index + 1 + " - " + contato.nome + " - " + contato.telefone;
+                });
+                alert("Contatos:\n" + contatos.join("\n"));
+        }
+    }
+
+        //funcao para remover o ultimo contato
+        function removerUltimoContato() {
+            if (agenda.length === 0) {
+                alert("Nenhum contato cadastrado!");
+            } else {
+                const removido = agenda.pop();
+                alert("Contato removido: " + removido.nome + " - " + removido.telefone);
+            }
+        }
+
+
+        //funcao para remover um contato especifico
+        function removerContatoEspecifico(){
+        if (agenda.length === 0) {
+            alert("A agenda esta vazia!")
+            return;
+        }
+ 
+        const nomeRemover = prompt("Digite o nome do contato que deseja remover: ")
+        const indice = agenda.findIndex(function (contato){
+            return contato.nome.toLowerCase() === nomeRemover.toLowerCase()
+        })
+ 
+        if (indice !== -1) {
+            const removido = agenda.splice(indice, 1)[0];
+            alert("Contato removido: " + removido.nome + " - " + removido.telefone)
+        } else {
+            alert("Contato nao localizado")
+        }
+ 
+       }
+
+
+
+
+        mostrarMenu();
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
