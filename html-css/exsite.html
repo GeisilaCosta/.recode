@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsivo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .principal {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .cabecalho {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .cabecalho img {
+            width: 150px;
+            margin-left: 20px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(252, 214, 134);
+            padding: 10px 0;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            margin: 0 15px;
+        }
+
+        .corpo {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .cima {
+            margin-bottom: 20px;
+        }
+
+        .baixo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #FD947F;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .baixo div {
+
+            text-align: center;
+            width: 30%;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .baixo img {
+            width: 100%;
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .rodape {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(252, 214, 134);
+        }
+    </style>
+</head>
+<body>
+    <div class="principal">
+        <!-- Cabeçalho -->
+        <div class="cabecalho">
+            <img src="img/logo.jpg" alt="Logo">
+        </div>
+
+        <!-- Navegação -->
+        <div class="nav">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+            <a href="">Link 5</a>
+        </div>
+
+        <!-- Corpo -->
+        <div class="corpo">
+            <div class="cima">
+                <h1>Recode Pro IA - SITE RESPONSIVO com HTML5 e CSS3</h1>
+                <p>Nosso site responsivo poderá ser bem visualizado em desktops, tablets e smartphones.</p>
+            </div>
+            <div class="baixo">
+                <div>
+                    <img src="img/comp.jpg" alt="Desktop">
+                    <p>Site Responsivo DESKTOP</p>
+                </div>
+                <div>
+                    <img src="img/tablet.jpg" alt="Tablet">
+                    <p>Site Responsivo TABLET</p>
+                </div>
+                <div>
+                    <img src="img/cel.jpg" alt="Mobile">
+                    <p>Site Responsivo MOBILE</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="rodape">
+            <p>&copy; 2025 - Todos os direitos reservados</p>
+        </div>
+    </div>
+</body>
+</html>
+

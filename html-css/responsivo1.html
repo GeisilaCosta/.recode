@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+ 
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border: 2px solid red; /* Apenas para visualizar melhor o layout */
+  }
+ 
+  .header {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 10%;
+    border-bottom: 2px solid red;
+    background-color: lightblue; /* Cor inicial para a header */
+  }
+ 
+  .content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    display: flex;
+    border-bottom: 2px solid red;
+    background-color: lightgray; /* Cor inicial para a content */
+  }
+ 
+  .content .sidebar {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 20%;
+    border-right: 2px solid red;
+    background-color: lightgreen; /* Cor inicial para a sidebar */
+  }
+ 
+  .content .main {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    background-color: lightyellow; /* Cor inicial para a main content */
+  }
+ 
+  .footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 10%;
+    background-color: lightcoral; /* Cor inicial para o footer */
+  }
+
+  /* Estilos para telas maiores (Desktop) */
+  @media (min-width: 1024px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+ 
+  /* Estilos para tablets */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      flex-direction: column;
+    }
+    .content {
+      flex-direction: column;
+      background-color: #d3d3f3; /* Cor para a content em tablets */
+    }
+    .content .sidebar {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+      height: 50px; /* Sidebar horizontal no tablet */
+      border-right: none;
+      border-bottom: 2px solid red;
+      background-color: #c3e6c3; /* Cor para a sidebar em tablets */
+    }
+  }
+ 
+  /* Estilos para celulares */
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+    
+    }
+    .content {
+      flex-direction: column;
+      background-color: #f3e6d3; /* Cor para a content em celulares */
+    }
+    .content .sidebar {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+      height: 50px; /* Sidebar horizontal no celular */
+      border-right: none;
+      border-bottom: 2px solid red;
+      background-color: #e6f3c3; /* Cor para a sidebar em celulares */
+    }
+    .header {
+      background-color: #b3d9ff; /* Cor para a header em celulares */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer {
+      background-color: #ffb3b3; /* Cor para o footer em celulares */
+    }
+  }
+ 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+
+    <div class="content">
+      <div class="sidebar">Sidebar</div>
+      <div class="main">Main Content</div>
+    </div>
+
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>
