@@ -1,0 +1,194 @@
+﻿@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	margin: auto;
+	text-align: center;
+}
+
+/* Conf. cabeçalho*/
+header {
+	width: 95%;
+	height: 200px;
+	border-bottom: 1px solid #333;
+	margin: auto;
+}
+
+header figure {
+	width: 302px;
+	height: 119px;
+	float: left;
+	margin: 40px 0;
+}
+
+nav {
+	width: 500px;
+	height: 30px;
+	float: right;
+	margin-top: 130px;
+}
+
+nav ul {
+	width: 100%;
+}
+
+nav ul li {
+	width: 80px;
+	height: 30px;
+	background: #FC6;
+	float: left;
+	margin: 0 6px;
+	line-height: 30px;
+}
+
+nav ul li a {
+	color: #000;
+	font: normal 14px arial;
+}
+
+/* Conf. a section*/
+section {
+	width: 95%;
+	height: 120px;
+	margin: auto;
+}
+
+section h1 {
+	font: bold 200% arial;
+}
+
+section h2 {
+	font: bold 130% arial;
+}
+
+/* Conf. Galeria */
+#galeria {
+	width: 95%;
+	height: 480px;
+	margin: auto;
+	background: #FE9380;
+}
+
+.desktop {
+	width: 30%;
+	height: 400px;
+	float: left;
+	margin: 1.5%;
+	background: #ccc;
+}
+
+
+h3 {
+	font: bold 130% arial;
+	color: #FFF;
+	margin: 20px 0;
+}
+
+/* media screen */
+@media screen and (max-width:900px) {
+
+	/* Conf. elemento header */
+	header {
+		width: 100%;
+		min-height: 350px;
+		border-bottom: 1px solid #333;
+		margin: auto;
+	}
+
+	header figure {
+		width: 100%;
+		height: 119px;
+		float: left;
+		margin: 40px 0;
+	}
+
+	nav {
+		width: 100%;
+		height: 30px;
+		float: left;
+		margin-top: 0px;
+	}
+
+	nav ul {
+		width: 100%;
+	}
+
+	nav ul li {
+		width: 100%;
+		height: 30px;
+		background: #FC6;
+		float: left;
+		margin: 0px 0px;
+		line-height: 30px;
+	}
+
+	nav ul li a {
+		color: #000;
+		font: normal 14px arial;
+	}
+
+	/* Conf. Section */
+	section {
+		width:100%;
+		min-height: 120px;
+		margin: auto;
+	}
+
+	section h1 {
+		font: bold 150% arial;
+	}
+
+	section h2 {
+		font: bold 100% arial;
+	}
+
+	/* Conf. Galeria */
+	#galeria {
+		width: 100%;
+		height: 200px;
+		margin: auto;
+		background: #FE9380;
+	}
+
+	.desktop {
+		width: 100%;
+		height: 300px;
+		float: left;
+		margin: 10px 0;
+		background: #ccc;
+	}
+
+
+	h3 {
+		font: bold 130% arial;
+		color: #FFF;
+		margin: 20px 0;
+	}
+
+
+	#cordesktop1 {
+		width: 100%;
+		height: 200px;
+		background: #FE9380;
+	}
+
+
+	#cordesktop2 {
+		width: 100%;
+		height: 200px;
+		background: #FCDA92;
+	}
+
+	#cordesktop3 {
+		width: 100%;
+		height: 200px;
+		background: #9C8CB9;
+	}
+
+}
