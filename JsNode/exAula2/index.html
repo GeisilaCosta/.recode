@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Centralizado</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h2>Formulário</h2>
+            <label for="campo1">Campo 1:</label>
+            <input type="text" id="campo1" name="campo1" required>
+
+            <label for="campo2">Campo 2:</label>
+            <input type="text" id="campo2" name="campo2" required>
+
+            <label for="resultado">Operacões:</label>
+            <select id="operation">
+                <option value="" disabled selected>Selecione a operação</option>
+                <option value="add">adição</option>
+                <option value="sub">Subtração</option>
+                <option value="mult">Multiplicação</option>
+                <option value="div">Divisão</option>
+            </select>
+
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" name="campo3" disabled>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+Jogo,Time,Adversário,Gols_Time,Gols_Adversario
+1,Vasco,Botafogo,5,5
+2,Grêmio,Corinthians,2,4
+3,Internacional,Flamengo,5,3
+4,Cruzeiro,Internacional,1,0
+5,Botafogo,Corinthians,5,5
+6,Botafogo,Santos,4,1
+7,São Paulo,Corinthians,2,5
+8,São Paulo,Flamengo,2,2
+9,Palmeiras,Grêmio,1,1
+10,Flamengo,Grêmio,0,2
+11,Botafogo,Internacional,0,5
+12,São Paulo,Santos,2,0
+13,Vasco,Internacional,1,1
+14,São Paulo,Grêmio,5,2
+15,Internacional,Palmeiras,1,1
+16,Palmeiras,Vasco,2,1
+17,Flamengo,Vasco,4,0
+18,Botafogo,Cruzeiro,0,2
+19,Cruzeiro,Santos,0,5
+20,São Paulo,Vasco,4,2
+21,Botafogo,Flamengo,0,4
+22,Vasco,Internacional,0,5
+23,Botafogo,Palmeiras,5,4
+24,Santos,Internacional,4,2
+25,Flamengo,Internacional,0,1
+26,São Paulo,Cruzeiro,5,3
+27,Flamengo,Grêmio,3,2
+28,Cruzeiro,Palmeiras,2,3
+29,Cruzeiro,Botafogo,2,1
+30,Cruzeiro,Palmeiras,4,1
+31,Flamengo,Internacional,4,5
+32,Palmeiras,Botafogo,3,3
+33,Corinthians,São Paulo,4,3
+34,Vasco,Grêmio,5,2
+35,Vasco,Internacional,4,0
+36,Santos,Botafogo,5,4
+37,São Paulo,Santos,0,4
+38,Santos,Grêmio,0,5
+39,Botafogo,Cruzeiro,3,5
+40,Flamengo,Botafogo,1,0
+41,Vasco,São Paulo,5,3
+42,Internacional,São Paulo,2,5
+43,Internacional,Botafogo,1,5
+44,Vasco,Cruzeiro,0,0
+45,Internacional,Botafogo,4,3
+46,Cruzeiro,Vasco,5,1
+47,Internacional,São Paulo,2,1
+48,Cruzeiro,Vasco,5,3
+49,São Paulo,Grêmio,3,2
+50,Botafogo,Flamengo,4,0
+51,Corinthians,São Paulo,0,4
+52,Internacional,Palmeiras,1,3
+53,Cruzeiro,Grêmio,5,0
+54,Vasco,Santos,4,2
+55,Flamengo,Botafogo,0,2
+56,Cruzeiro,Palmeiras,4,2
+57,Santos,Flamengo,0,5
+58,Palmeiras,Vasco,4,0
+59,Internacional,Corinthians,0,2
+60,Botafogo,São Paulo,1,0
+61,Grêmio,Botafogo,5,4
+62,Flamengo,Cruzeiro,5,5
+63,Botafogo,Internacional,4,4
+64,Corinthians,Grêmio,0,4
+65,São Paulo,Vasco,4,5
+66,São Paulo,Vasco,2,2
+67,Palmeiras,Cruzeiro,5,2
+68,São Paulo,Botafogo,0,3
+69,Corinthians,Botafogo,0,5
+70,Santos,Palmeiras,4,2
+71,Vasco,Grêmio,1,3
+72,Palmeiras,Internacional,2,1
+73,Corinthians,Vasco,0,0
+74,São Paulo,Santos,1,1
+75,Cruzeiro,Internacional,1,5
+76,São Paulo,Corinthians,3,4
+77,Vasco,Cruzeiro,1,4
+78,Internacional,Cruzeiro,4,2
+79,Grêmio,Corinthians,5,1
+80,São Paulo,Vasco,0,3
+81,Corinthians,Palmeiras,4,1
+82,Palmeiras,Grêmio,4,3
+83,Grêmio,Vasco,3,5
+84,Vasco,Santos,5,5
+85,Grêmio,Cruzeiro,1,1
+86,Palmeiras,Santos,0,0
+87,Grêmio,Flamengo,1,1
+88,Flamengo,Palmeiras,0,2
+89,Vasco,Botafogo,3,0
+90,Santos,Internacional,2,0
+91,Botafogo,São Paulo,3,1
+92,Flamengo,Botafogo,4,1
+93,São Paulo,Internacional,2,3
+94,Palmeiras,Vasco,0,2
+95,Cruzeiro,Vasco,3,0
+96,Vasco,Cruzeiro,1,2
+97,Corinthians,Internacional,1,1
+98,Palmeiras,Botafogo,4,1
+99,Corinthians,Grêmio,5,5
+100,Santos,Corinthians,3,2
+101,São Paulo,Grêmio,4,3
+102,São Paulo,Cruzeiro,5,5
+103,Grêmio,Internacional,1,2
+104,Vasco,São Paulo,1,1
+105,Flamengo,Palmeiras,5,3
+106,Cruzeiro,Santos,2,2
+107,Flamengo,Corinthians,5,5
+108,Internacional,Palmeiras,2,0
+109,Grêmio,Vasco,4,2
+110,Grêmio,Vasco,5,1
+111,Cruzeiro,Internacional,4,1
+112,Santos,Grêmio,1,1
+113,Santos,Botafogo,3,1
+114,Grêmio,Vasco,1,1
+115,Internacional,Cruzeiro,5,2
+116,Corinthians,Grêmio,2,5
+117,Santos,Flamengo,3,0
+118,Internacional,Santos,2,0
+119,Grêmio,Botafogo,4,4
+120,Grêmio,Botafogo,4,4
+121,São Paulo,Internacional,2,3
+122,Cruzeiro,Grêmio,4,1
+123,Botafogo,Grêmio,4,1
+124,Cruzeiro,Grêmio,3,1
+125,Botafogo,Palmeiras,4,2
+126,Santos,Botafogo,5,1
+127,Flamengo,São Paulo,3,0
+128,Flamengo,Corinthians,1,5
+129,Cruzeiro,Flamengo,3,5
+130,Botafogo,Vasco,3,1
+131,Corinthians,Palmeiras,2,0
+132,Corinthians,Botafogo,0,5
+133,Palmeiras,Cruzeiro,3,4
+134,Corinthians,Flamengo,4,0
+135,Grêmio,Cruzeiro,4,0
+136,Santos,Grêmio,2,2
+137,Flamengo,Internacional,4,2
+138,Palmeiras,Grêmio,3,1
+139,Corinthians,São Paulo,0,5
+140,Santos,Grêmio,1,4
+141,Corinthians,Palmeiras,0,0
+142,Cruzeiro,Flamengo,1,4
+143,São Paulo,Cruzeiro,5,0
+144,Botafogo,Grêmio,3,2
+145,Flamengo,Corinthians,4,4
+146,Flamengo,Palmeiras,1,1
+147,Botafogo,Santos,3,3
+148,Palmeiras,São Paulo,0,1
+149,Palmeiras,Botafogo,3,2
+150,Santos,Cruzeiro,1,2
+151,Vasco,Flamengo,3,5
+152,Botafogo,Vasco,1,3
+153,São Paulo,Botafogo,2,0
+154,Grêmio,Cruzeiro,5,5
+155,Corinthians,Grêmio,2,1
+156,Corinthians,Cruzeiro,2,0
+157,Botafogo,Santos,0,0
+158,Palmeiras,Cruzeiro,3,3
+159,Internacional,Corinthians,3,1
+160,Grêmio,Santos,2,5
+161,Santos,Flamengo,5,1
+162,Vasco,Internacional,1,5
+163,Botafogo,Grêmio,5,4
+164,Santos,São Paulo,3,4
+165,Grêmio,Flamengo,0,5
+166,Corinthians,Grêmio,5,0
+167,São Paulo,Santos,1,1
+168,Palmeiras,Vasco,1,4
+169,Cruzeiro,Palmeiras,2,3
+170,Botafogo,Flamengo,1,2
+171,Vasco,Grêmio,3,0
+172,São Paulo,Flamengo,1,5
+173,Corinthians,Cruzeiro,1,0
+174,Botafogo,Cruzeiro,5,5
+175,Grêmio,Santos,3,1
+176,São Paulo,Santos,3,2
+177,Botafogo,Santos,4,4
+178,Internacional,Palmeiras,4,2
+179,São Paulo,Cruzeiro,2,0
+180,Flamengo,Vasco,5,2
+181,Corinthians,São Paulo,3,5
+182,Grêmio,Internacional,5,2
+183,São Paulo,Santos,3,4
+184,Cruzeiro,Santos,5,3
+185,Santos,Botafogo,2,1
+186,Botafogo,Corinthians,3,0
+187,Vasco,São Paulo,0,5
+188,Flamengo,São Paulo,0,2
+189,Santos,Corinthians,3,0
+190,Flamengo,Vasco,2,5
+191,São Paulo,Palmeiras,0,4
+192,Santos,Corinthians,5,0
+193,Cruzeiro,Internacional,5,1
+194,São Paulo,Botafogo,4,2
+195,Corinthians,Internacional,5,1
+196,Botafogo,Grêmio,5,1
+197,Santos,Vasco,5,5
+198,São Paulo,Flamengo,2,3
+199,Santos,Vasco,3,1
+200,Vasco,São Paulo,2,2

@@ -1,0 +1,3 @@
+luna,cachorro,4,pet,sim
+mel,gato,4,adulto,sim
+thor,cachorro,10,idoso,sim
