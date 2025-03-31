@@ -1,0 +1,1 @@
+export default function Aside() { const formatacao = { color: 'blue', backgroundColor: 'red' }; return <aside style={formatacao}><nav>Menu Lateral</nav></aside>; }

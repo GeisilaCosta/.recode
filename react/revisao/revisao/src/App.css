@@ -1,0 +1,42 @@
+/* Aplica o layout geral */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Faz a tela ocupar toda a altura */
+}
+
+/* O header ocupa a largura total */
+header {
+  background-color: #e74c3c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Organiza o conteúdo em colunas */
+.content {
+  display: flex;
+  flex: 1; /* Ocupa todo o espaço restante */
+}
+
+/* Aside (menu lateral à esquerda) */
+aside {
+  width: 20%;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Main (conteúdo principal no centro) */
+main {
+  flex: 1; /* Ocupa o espaço restante */
+  padding: 20px;
+}
+
+/* Footer no rodapé */
+footer {
+  background-color: #ddd;
+  text-align: center;
+  padding: 10px;
+}
