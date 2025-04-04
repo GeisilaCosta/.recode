@@ -1,0 +1,67 @@
+.servico-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.status-display {
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button-group button:hover {
+  opacity: 0.8;
+}
+
+.button-group button.active {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button-group button:first-child {
+  background-color: #e2f8e3;
+  color: green;
+}
+
+.button-group button:nth-child(2) {
+  background-color: #fff3e0;
+  color: orange;
+}
+
+.button-group button:last-child {
+  background-color: #fde3e7;
+  color: red;
+}
+
+/* do professor
+.status {
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+  }
+  .aberto { background-color: green; }
+  .em-andamento { background-color: orange; }
+  .fechado { background-color: red; } */

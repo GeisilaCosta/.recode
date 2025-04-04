@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cards Dinâmicos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+    <div class="container mt-5">
+        <h2 class="text-center">Criar e Remover Elementos Dinamicamente</h2>
+ 
+        <!-- Formulário para adicionar cards -->
+        <div class="input-group mt-4">
+            <input type="text" id="tituloCard" class="form-control" placeholder="Título do Card" required>
+            <input type="text" id="descricaoCard" class="form-control" placeholder="Descrição" required>
+            <button class="btn btn-primary" onclick="adicionarCard()">Adicionar Card</button>
+        </div>
+ 
+        <!-- Área onde os cards serão adicionados -->
+        <div id="containerCards" class="mt-4 row">          
+           
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
