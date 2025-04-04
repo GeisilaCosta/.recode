@@ -1,0 +1,2 @@
+GRANT ALL PRIVILEGES ON cursos_db.* TO 'geisila'@'localhost' IDENTIFIED BY '040117';
+FLUSH PRIVILEGES;
