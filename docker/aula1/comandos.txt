@@ -1,0 +1,57 @@
+docker --version - Exibe a versão do Docker instalada.
+
+docker pull <imagem>
+Baixa uma imagem do Docker Hub ou de um repositório remoto.
+
+docker build -t <nome_imagem> <diretório>
+Cria uma imagem a partir de um Dockerfile localizado no diretório especificado.
+
+docker images - Lista todas as imagens locais disponíveis no seu sistema.
+
+docker ps
+Exibe os contêineres em execução.
+
+docker ps -a
+Lista todos os contêineres, incluindo os que estão parados.
+
+docker run <imagem>
+Cria e inicia um novo contêiner a partir de uma imagem.
+
+docker run -d <imagem>
+Executa um contêiner em segundo plano (detached mode).
+
+docker exec -it <nome_contêiner> <comando>
+Executa um comando dentro de um contêiner em execução, com a opção -it permitindo interatividade.
+
+docker stop <nome_contêiner>
+Para um contêiner em execução.
+
+docker start <nome_contêiner>
+Inicia um contêiner parado.
+
+docker restart <nome_contêiner>
+Reinicia um contêiner.
+
+docker rm <nome_contêiner>
+Remove um contêiner parado.
+
+docker rmi <nome_imagem>
+Remove uma imagem do Docker.
+
+docker logs <nome_contêiner>
+Exibe os logs de um contêiner em execução.
+
+docker network ls
+Lista as redes Docker disponíveis.
+
+docker volume ls
+Lista os volumes do Docker.
+
+docker-compose up
+Inicia os serviços definidos no arquivo docker-compose.yml.
+
+docker-compose down
+Para e remove os contêineres, redes e volumes definidos no arquivo docker-compose.yml.
+
+docker info
+Exibe informações detalhadas sobre a instalação do Docker, como o número de contêineres e imagens, e o status do daemon.
