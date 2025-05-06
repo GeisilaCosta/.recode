@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores</title>
+</head>
+<body>
+    <h1>Lista de Professores</h1>
+    <table border="1" class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>RG</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% professores.forEach(professor => { %>
+                <tr>
+                    <td><%= professor.Nome %></td>
+                    <td><%= professor.RG %></td>
+                    <td>
+                        <a href="/edit/<%= professor._id %>">Editar</a> - 
+                        <a href="/delete/<%= professor._id %>">Deletar</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <h2>Adicionar Professor</h2>
+    <form action="/professores" method="POST">
+        <input type="text" name="Nome" placeholder="Nome" required>
+        <input type="text" name="RG" placeholder="RG" required>
+        <input type="text" name="CPF" placeholder="CPF" required>
+        <input type="text" name="Formacao" placeholder="Formação (separados por vírgula)" required>
+        <input type="date" name="DataAdmissao" placeholder="Data de Admissão" required>
+        <input type="number" name="Salario" placeholder="Salário" required>
+        <button type="submit">Adicionar Professor</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+</head>
+<body>
+    <h1>Lista de Cursos</h1>
+    <table border="1" class="table">
+        <thead>
+            <tr>
+                <th>Nome do Curso</th>
+                <th>Ano</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% cursos.forEach(curso => { %>
+                <tr>
+                    <td><%= curso.NomeDoCurso %></td>
+                    <td><%= curso.Ano %></td>
+                    <td>
+                        <a href="/edit/<%= curso._id %>">Editar</a> - 
+                        <a href="/delete/<%= curso._id %>">Deletar</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <h2>Adicionar Curso</h2>
+    <form action="/cursos" method="POST">
+        <input type="text" name="NomeDoCurso" placeholder="Nome do Curso" required>
+        <input type="number" name="Ano" placeholder="Ano" required>
+        <input type="number" name="Semestre" placeholder="Semestre" required>
+        <input type="number" name="CargaHoraria" placeholder="Carga Horária" required>
+        <input type="text" name="ProfessorResponsavel" placeholder="Professor Responsável" required>
+        <input type="number" name="Vagas" placeholder="Vagas" required>
+        <input type="text" name="PreRequisitos" placeholder="Pré-Requisitos (separados por vírgula)" required>
+        <button type="submit">Adicionar Curso</button>
+    </form>
+</body>
+</html>

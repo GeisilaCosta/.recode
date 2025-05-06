@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body>
+    <h1>Lista de Notas</h1>
+    <table border="1" class="table">
+        <thead>
+            <tr>
+                <th>Aluno ID</th>
+                <th>Notas</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% notas.forEach(nota => { %>
+                <tr>
+                    <td><%= nota.alunoId %></td>
+                    <td><%= nota.notas.join(', ') %></td>
+                    <td>
+                        <a href="/edit/<%= nota._id %>">Editar</a> - 
+                        <a href="/delete/<%= nota._id %>">Deletar</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <h2>Adicionar Notas</h2>
+    <form action="/notas" method="POST">
+        <input type="text" name="alunoId" placeholder="ID do Aluno" required>
+        <input type="text" name="notas" placeholder="Notas (separadas por vírgula)" required>
+        <button type="submit">Adicionar Notas</button>
+    </form>
+</body>
+</html>

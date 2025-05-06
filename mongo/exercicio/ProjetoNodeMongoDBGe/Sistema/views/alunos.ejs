@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+    <table border="1" class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>RM</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% alunos.forEach(aluno => { %>
+                <tr>
+                    <td><%= aluno.Nome %></td>
+                    <td><%= aluno.RM %></td>
+                    <td>
+                        <a href="/edit/<%= aluno._id %>">Editar</a> - 
+                        <a href="/delete/<%= aluno._id %>">Deletar</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <h2>Adicionar Aluno</h2>
+    <form action="/alunos" method="POST">
+        <input type="text" name="Nome" placeholder="Nome" required>
+        <input type="text" name="RM" placeholder="RM" required>
+        <input type="text" name="Telefone" placeholder="Telefone" required>
+        <input type="number" name="Idade" placeholder="Idade" required>
+        <input type="text" name="Cursos" placeholder="Cursos (separados por vírgula)" required>
+        <input type="number" name="MediaGeral" placeholder="Média Geral" required>
+        <button type="submit">Adicionar Aluno</button>
+    </form>
+</body>
+</html>

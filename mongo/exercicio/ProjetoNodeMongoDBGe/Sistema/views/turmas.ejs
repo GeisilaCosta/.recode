@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turmas</title>
+</head>
+<body>
+    <h1>Lista de Turmas</h1>
+    <table border="1" class="table">
+        <thead>
+            <tr>
+                <th>ID da Turma</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% turmas.forEach(turma => { %>
+                <tr>
+                    <td><%= turma.Id_turma %></td>
+                    <td><%= turma.Descricao %></td>
+                    <td>
+                        <a href="/edit/<%= turma._id %>">Editar</a> - 
+                        <a href="/delete/<%= turma._id %>">Deletar</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <h2>Adicionar Turma</h2>
+    <form action="/turmas" method="POST">
+        <input type="text" name="Id_turma" placeholder="ID da Turma" required>
+        <input type="text" name="Descricao" placeholder="Descrição" required>
+        <input type="text" name="Id_Aluno" placeholder="IDs dos Alunos (separados por vírgula)" required>
+        <input type="text" name="Id_professor" placeholder="ID do Professor" required>
+        <input type="text" name="Horario" placeholder="Horário" required>
+        <input type="text" name="Sala" placeholder="Sala" required>
+        <input type="text" name="Status" placeholder="Status" required>
+        <button type="submit">Adicionar Turma</button>
+    </form>
+</body>
+</html>
